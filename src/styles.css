@@ -1,0 +1,214 @@
+/* Partial Imports */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Color Variables */
+/* Components Imports */
+.widget-grid {
+  display: grid;
+  width: max-content;
+  grid-template-areas: "one two three four" "one five five four" "one five five four" "six six seven four";
+  gap: 20px;
+  /* Responsive Design */
+}
+.widget-grid .grid-item {
+  border-radius: 20px;
+  place-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.widget-grid .grid-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.widget-grid .grid-item-2x1-short {
+  width: 196px;
+  height: 295px;
+}
+.widget-grid .grid-item-1x1 {
+  width: 209px;
+  height: 174px;
+}
+.widget-grid .grid-item-1x1-short {
+  width: 196px;
+  height: 145px;
+}
+.widget-grid .grid-item-2x1 {
+  width: 196px;
+  height: 339px;
+}
+.widget-grid .grid-item-2x2 {
+  height: 265px;
+  width: 440px;
+}
+.widget-grid .grid-item-1x2 {
+  width: 425px;
+  height: 174px;
+}
+.widget-grid .grid-item-3x1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: max-content;
+}
+.widget-grid .grid-item-4x1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: max-content;
+}
+.widget-grid .video-container {
+  position: relative;
+}
+.widget-grid .video-container .video-player {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.widget-grid .video-container .video-overlay {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.widget-grid .video-container .nested-button {
+  z-index: 3;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  background-color: #ffffff;
+  width: 219px;
+  height: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 24px;
+  border-radius: 20px;
+}
+.widget-grid .video-container .nested-button:hover + .video-overlay {
+  backdrop-filter: blur(10px);
+  transition: backdrop-filter 0.2s ease-in-out;
+}
+.widget-grid .textblock {
+  text-align: left;
+  padding: 15px;
+  text-wrap: balance;
+}
+.widget-grid .quote {
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.widget-grid .quote p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  text-wrap: balance;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .widget-grid {
+    grid-template-areas: "one two three" "one five five" "six six seven" "four four four";
+    grid-template-areas: "two three four" "five five four" "five five four" "six six four" "seven one one ";
+  }
+  .widget-grid .grid-item-1x2 {
+    width: 440px;
+  }
+  .widget-grid .grid-item-1x1-short {
+    width: 211px;
+    height: 174px;
+  }
+  .widget-grid .grid-item-3x1 {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .widget-grid {
+    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven";
+    width: 100%;
+  }
+  .widget-grid .grid-item-2x1,
+  .widget-grid .grid-item-2x1-short,
+  .widget-grid .grid-item-1x1-short {
+    width: 209px;
+  }
+  .widget-grid .grid-item-1x2 {
+    width: 100%;
+  }
+  .widget-grid .grid-item-2x1 {
+    height: 295px;
+  }
+  .widget-grid .grid-item-2x2 {
+    width: 100%;
+  }
+}
+
+/* Area Assignments */
+.widget-grid #gi-1 {
+  grid-area: one;
+}
+.widget-grid #gi-2 {
+  grid-area: two;
+}
+.widget-grid #gi-3 {
+  grid-area: three;
+}
+.widget-grid #gi-4 {
+  grid-area: four;
+}
+.widget-grid #gi-5 {
+  grid-area: five;
+}
+.widget-grid #gi-6 {
+  grid-area: six;
+}
+.widget-grid #gi-7 {
+  grid-area: seven;
+}
+.widget-grid #gi-8 {
+  grid-area: eight;
+}
+.widget-grid #gi-9 {
+  grid-area: nine;
+}
+
+/*# sourceMappingURL=styles.css.map */
