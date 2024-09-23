@@ -2,6 +2,7 @@
 	display: grid;
 	width: max-content;
 	grid-template-areas: "one two three four" "one five five four" "one five five four" "six six seven four";
+	justify-items: center;
 	gap: 20px;
 	.grid-item {
 		border-radius: 20px;
@@ -121,12 +122,6 @@
 	/* Responsive Design */
 	@include device(tablet) {
 		grid-template-areas:
-			"one two three"
-			"one five five"
-			"six six seven"
-			"four four four";
-
-		grid-template-areas:
 			"two three four"
 			"five five four"
 			"five five four"
@@ -143,7 +138,18 @@
 			flex-direction: row-reverse;
 		}
 	}
-
+	@include device(tablet-mini) {
+		grid-template-areas:
+			"two three"
+			"five five "
+			"five five "
+			"six six"
+			"one four"
+			"seven four";
+		.grid-item-1x2 {
+			width: 440px;
+		}
+	}
 	@include device(mobile) {
 		grid-template-areas:
 			"one"

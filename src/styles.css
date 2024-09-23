@@ -54,6 +54,7 @@ body {
   display: grid;
   width: max-content;
   grid-template-areas: "one two three four" "one five five four" "one five five four" "six six seven four";
+  justify-items: center;
   gap: 20px;
   /* Responsive Design */
 }
@@ -166,9 +167,8 @@ body {
   text-align: center;
   text-wrap: balance;
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
   .widget-grid {
-    grid-template-areas: "one two three" "one five five" "six six seven" "four four four";
     grid-template-areas: "two three four" "five five four" "five five four" "six six four" "seven one one ";
   }
   .widget-grid .grid-item-1x2 {
@@ -180,6 +180,14 @@ body {
   }
   .widget-grid .grid-item-3x1 {
     flex-direction: row-reverse;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+  .widget-grid {
+    grid-template-areas: "two three" "five five " "five five " "six six" "one four" "seven four";
+  }
+  .widget-grid .grid-item-1x2 {
+    width: 440px;
   }
 }
 @media (max-width: 768px) {
@@ -454,6 +462,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .App .wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .App .wrapper .sidebar {
+    width: 100%;
+  }
+  .App .wrapper .widget-grid {
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

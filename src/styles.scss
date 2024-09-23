@@ -22,5 +22,16 @@
 				align-items: center;
 			}
 		}
+		@include device(mobile) {
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 10px;
+			.sidebar {
+				width: 100%;
+			}
+			.widget-grid {
+				padding: 5px;
+			}
+		}
 	}
 }
