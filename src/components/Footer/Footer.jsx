@@ -1,4 +1,4 @@
-import ImmoIQ from "../Vectors/ImmoIQ";
+import ImmoIQ from "../Icons/ImmoIQ";
 const Footer = () => {
 	return (
 		<div className="footer">

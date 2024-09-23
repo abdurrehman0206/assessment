@@ -1,0 +1,15 @@
+.tag {
+	min-width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	background-color: $tag;
+	padding: 5px 10px;
+	border-radius: 25px;
+	font-size: 10px;
+	font-weight: 600;
+	color: $highlight;
+}

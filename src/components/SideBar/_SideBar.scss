@@ -1,0 +1,25 @@
+.sidebar {
+	width: 310px;
+
+	border-radius: 10px;
+	box-shadow: 6px 30px 46.8px 0px rgba(0, 0, 0, 0.05);
+	.sidebar-header {
+		padding: 10px;
+		display: flex;
+		justify-content: flex-end;
+
+		.sidebar-header-right {
+			display: flex;
+			align-items: center;
+			gap: 3px;
+		}
+	}
+
+	.sidebar-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 36px;
+		margin-top: 17px;
+	}
+}
