@@ -8,6 +8,8 @@ import Compass from "../Icons/Compass";
 import Golf from "../Icons/Golf";
 import { ChevronDown } from "lucide-react";
 import MenuItem from "./MenuItem/MenuItem";
+import Credits from "./Credits/Credits";
+import GoogleReview from "./GoogleReview/GoogleReview";
 
 const MenuItemsArray = [
 	{
@@ -66,6 +68,10 @@ const SideBar = () => {
 				{MenuItemsArray.map((item, index) => {
 					return <MenuItem key={index} props={item} />;
 				})}
+			</div>
+			<div className="credits-wrapper">
+				<Credits />
+				<GoogleReview />
 			</div>
 		</div>
 	);

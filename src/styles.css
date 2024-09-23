@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,6 +29,7 @@ input {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #fcfcfc;
 }
 
 /* Color Variables */
@@ -164,7 +166,7 @@ body {
   text-align: center;
   text-wrap: balance;
 }
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .widget-grid {
     grid-template-areas: "one two three" "one five five" "six six seven" "four four four";
     grid-template-areas: "two three four" "five five four" "five five four" "six six four" "seven one one ";
@@ -231,7 +233,7 @@ body {
 }
 
 .top-banner {
-  padding: 49px;
+  padding: 30px;
   background-color: #459e97;
   display: flex;
   flex-direction: row;
@@ -319,10 +321,94 @@ body {
   stroke: #ffffff !important;
 }
 
+.credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  background-color: #459e97;
+  color: #ffffff;
+  border: 3px solid rgba(255, 255, 255, 0.81);
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.credits .image-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  overflow: hidden;
+  width: 81px;
+  height: 81px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border: 4.27px solid #ffffff;
+}
+.credits .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.credits .credits-title {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.credits .credits-description {
+  text-align: center;
+  text-wrap: balance;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+.credits .contact-button {
+  background: rgba(255, 255, 255, 0.14);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.credits .contact-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.google-review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.google-review .google-review-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.google-review .google-review-top p {
+  font-weight: 500;
+  color: #024154;
+  font-size: 15px;
+}
+.google-review .google-review-top .review-gen {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.google-review .google-review-bottom {
+  color: #024154;
+  font-size: 12px;
+  text-wrap: nowrap;
+}
+
 .sidebar {
   width: 310px;
   border-radius: 10px;
-  box-shadow: 6px 30px 46.8px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 23.1px 0px rgba(0, 0, 0, 0.07);
 }
 .sidebar .sidebar-header {
   padding: 10px;
@@ -341,17 +427,25 @@ body {
   margin-bottom: 36px;
   margin-top: 17px;
 }
+.sidebar .credits-wrapper {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .App .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  padding: 0px 10px;
 }
 .App .wrapper .widget-view {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 61px;
+  gap: 45px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 6px 30px 46.8px 0px rgba(0, 0, 0, 0.05);

@@ -3,3 +3,7 @@ $accent: #459e97;
 $highlight: #024154;
 $highlight-light: #2b606f;
 $tag: #effbff;
+$stroke: transparentize(
+	$color: #ffffff,
+	$amount: 0.19,
+);

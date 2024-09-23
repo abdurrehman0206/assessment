@@ -1,0 +1,25 @@
+.google-review {
+	display: flex;
+	flex-direction: column;
+
+	gap: 10px;
+	.google-review-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		p {
+			font-weight: 500;
+			color: $highlight;
+			font-size: 15px;
+		}
+		.review-gen {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+	}
+	.google-review-bottom {
+		color: $highlight;
+		font-size: 12px;
+		text-wrap: nowrap;
+	}
+}

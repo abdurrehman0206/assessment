@@ -1,0 +1,59 @@
+.credits {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	position: relative;
+	background-color: $accent;
+	color: #ffffff;
+	border: 3px solid $stroke;
+	border-radius: 10px;
+	margin-top: 60px;
+	.image-container {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		overflow: hidden;
+		width: 81px;
+		height: 81px;
+		border-radius: 100%;
+		background-color: #ffffff;
+		border: 4.27px solid #ffffff;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.credits-title {
+		text-align: center;
+		margin-top: 50px;
+		font-family: "Plus Jakarta Sans", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.credits-description {
+		text-align: center;
+		text-wrap: balance;
+		font-family: "Lato", sans-serif;
+		font-size: 14px;
+	}
+
+	.contact-button {
+		background: transparentize($color: #ffffff, $amount: 0.86);
+		padding: 10px;
+		border-radius: 10px;
+		font-family: "Plus Jakarta Sans", sans-serif;
+		font-size: 13px;
+		font-weight: 600;
+		color: #ffffff;
+		margin-bottom: 25px;
+		&:hover {
+			background: transparentize($color: #ffffff, $amount: 0.8);
+		}
+	}
+}
