@@ -36,6 +36,7 @@
 		]
 	},
 	"devDependencies": {
+		"lucide-react": "^0.445.0",
 		"sass": "^1.79.3"
 	}
 }

@@ -94,6 +94,7 @@ body {
   object-fit: cover;
 }
 .widget-grid .video-container .video-overlay {
+  border-radius: 20px;
   z-index: 2;
   position: absolute;
   display: flex;
@@ -209,6 +210,68 @@ body {
 }
 .widget-grid #gi-9 {
   grid-area: nine;
+}
+
+.top-banner {
+  padding: 49px;
+  background-color: #459e97;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-banner .banner-content-left {
+  color: white;
+}
+.top-banner .banner-content-left .top-banner-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.top-banner .banner-content-left .top-banner-description {
+  font-size: 20px;
+  font-weight: normal;
+}
+.top-banner .banner-content-right .reload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.footer p {
+  font-family: "Inter", sans-serif;
+}
+.footer .footer-text {
+  font-size: 16px;
+  color: #2b606f;
+}
+.footer .footer-muted-text {
+  font-size: 10px;
+  color: rgba(43, 96, 111, 0.6);
+}
+
+.App .wrapper .widget-view {
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 6px 30px 46.8px 0px rgba(0, 0, 0, 0.05);
+}
+.App .wrapper .widget-view .widget-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

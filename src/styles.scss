@@ -1,1 +1,19 @@
 @import "./styles/index";
+
+.App {
+	.wrapper {
+		.widget-view {
+			display: flex;
+			flex-direction: column;
+			gap: 61px;
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: 6px 30px 46.8px 0px rgba(0, 0, 0, 0.05);
+			.widget-grid-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}

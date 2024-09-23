@@ -1,0 +1,32 @@
+.top-banner {
+	padding: 49px;
+	background-color: $accent;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	.banner-content-left {
+		color: white;
+		.top-banner-title {
+			font-size: 24px;
+			font-weight: bold;
+
+			margin-bottom: 0.5rem;
+		}
+		.top-banner-description {
+			font-size: 20px;
+			font-weight: normal;
+		}
+	}
+	.banner-content-right {
+		.reload-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 5px;
+			color: white;
+		}
+	}
+}
